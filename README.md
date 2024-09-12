@@ -6,10 +6,10 @@ When run, Scraping_Comparing_Tweeting_GGST_Top_100.py will grab the latest csv f
 If you want to test the scraping without the comparison and tweeting, you can comment out all of the main() function except for this part:
 
 def main():
-    df_new = scrape_rating_update()
-    current_datetime = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"output/GGST_Comparison_{current_datetime}.csv"
-    df_new.to_csv(filename, index=False)
+df_new = scrape_rating_update()
+current_datetime = datetime.now().strftime("%Y%m%d_%H%M%S")
+filename = f"output/GGST_Comparison_{current_datetime}.csv"
+df_new.to_csv(filename, index=False)
 
 
 
