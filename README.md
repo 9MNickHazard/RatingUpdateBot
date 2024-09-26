@@ -12,7 +12,3 @@ filename = f"output/GGST_Comparison_{current_datetime}.csv"
 df_new.to_csv(filename, index=False)
 
 
-
-Notes:
-- This script does not automate itself (yet), I have task scheduler set up on my computer to run this script everyday at 10pm EST. If you do something similar, make sure to add the "start in:" option in task scheduler and choose the directory the script it located in, otherwise the files wont be saved and loaded properly
-- Some of this code is fairly tough to follow, I plan to update it to make main() much easier to read in the near future
